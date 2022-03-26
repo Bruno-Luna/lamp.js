@@ -1,0 +1,45 @@
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.borda{
+    width: 6rem;
+    height: 1rem;
+    padding: 1.28rem;
+    margin-top: 2rem;
+    border: 2px solid hsl(0, 0%, 57%);
+    border-radius: .4rem;
+    background-color: hsl(0, 0%, 67%);
+}
+
+.botao{
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.ligar{
+    border: none;
+    float:left;
+}  
+
+.botao.ligar{
+    width: 2.8rem;
+    border-radius: 2px;
+}
+
+.desligar{
+    border: none;
+    float: right;
+}
+
+.botao.desligar{
+    width:2.8rem;
+    border-radius: 2px;
+}
+
+#lampada{
+    margin: 0 auto;
+}
