@@ -1,4 +1,6 @@
-# lamp.js 💡
+# 💡 lamp.js 
+Desafio da lâmpada, desenvolvido na linguagem JavaScript. <br>
+Caso seja dia, a lâmpada inicializará desligada, caso contrário lâmpada estará ligada.
 
 ## 💻 Feito com:
 
