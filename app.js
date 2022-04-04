@@ -16,17 +16,17 @@ const ligar = function(){
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
     }
 
-const capturarHora = function(){
-    let hora = new Date
-    idHora.textContent = 'Hora atual: ' + hora.getHours() + ':' + hora.getMinutes()
-    idHora.style.color = black
+    const capturarHora = function(){
+        let hora = new Date
+        idHora.textContent = 'Hora atual: ' + hora.getHours() + ':' + hora.getMinutes()
+        idHora.style.color = black
     
-    if(hora.getHours() > 7 && hora.getHours() < 18){
-        return desligar()
-    }else if(hora.getHours() < 7 || hora.getHours() > 18){
-        return ligar()
+        if(hora.getHours() >= 6 && hora.getHours() < 18){
+            return desligar()
+        }else if(hora.getHours() >= 18 || hora.getHours() < 6 ){
+            return ligar()
+        }
+    
     }
-
-}
 
 capturarHora()
