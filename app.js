@@ -20,7 +20,8 @@ const desligar = () => {
 
 
 const capturarHora = () => {
-        idHora.textContent = 'Hora atual: ' + hora.getHours() + ':' + hora.getMinutes()
+        const horaAtual = `Horário de Brasília: ${hora.getHours()}:${hora.getMinutes()}`
+        idHora.textContent = horaAtual
         idHora.style.color = black
 }
 
