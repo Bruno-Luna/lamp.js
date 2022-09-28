@@ -9,7 +9,6 @@ const ligar = () => {
         document.getElementById('lampada').style.backgroundImage = 'url("img/ligada.jpg")'
         interruptorLigado.setAttribute('style', 'background-color: white;')
         interruptorDesligado.setAttribute('style', 'border: 2px solid white;')
-
 }
     
 const desligar = () => {
@@ -18,7 +17,6 @@ const desligar = () => {
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
 }
 
-
 const capturarHora = () => {
         const horaAtual = `Horário de Brasília: ${hora.getHours()}:${hora.getMinutes()}`
         idHora.textContent = horaAtual
@@ -26,9 +24,12 @@ const capturarHora = () => {
 }
 
 const verificadorHora = () => {
-    if(hora.getHours() >= 6 && hora.getHours() < 18){
+    const ehDia = hora.getHours() >= 6 && hora.getHours() < 18
+    const ehNoite = hora.getHours() >= 18 || hora.getHours() < 6
+    
+    if(ehDia){
         return desligar()
-    }else if(hora.getHours() >= 18 || hora.getHours() < 6 ){
+    }else if(ehNoite){
         return ligar()
     }
 }
