@@ -22,7 +22,6 @@ const desligar = () => {
 const capturarHora = () => {
         idHora.textContent = 'Hora atual: ' + hora.getHours() + ':' + hora.getMinutes()
         idHora.style.color = black
-       verificadorHora()
 }
 
 const verificadorHora = () => {
@@ -33,4 +32,4 @@ const verificadorHora = () => {
     }
 }
 
-capturarHora()
+capturarHora(verificadorHora())
