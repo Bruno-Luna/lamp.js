@@ -17,7 +17,7 @@ const desligar = () => {
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
 }
 
-const capturarHora = () => {
+const exibirHora = () => {
         const horaAtual = `Horário de Brasília: ${hora.getHours()}:${hora.getMinutes()}`
         idHora.textContent = horaAtual
         idHora.style.color = black
@@ -26,7 +26,7 @@ const capturarHora = () => {
 const verificadorHora = () => {
     const ehDia = hora.getHours() >= 6 && hora.getHours() < 18
     const ehNoite = hora.getHours() >= 18 || hora.getHours() < 6
-    
+
     if(ehDia){
         return desligar()
     }else if(ehNoite){
@@ -34,4 +34,4 @@ const verificadorHora = () => {
     }
 }
 
-capturarHora(verificadorHora())
+exibirHora(verificadorHora())
