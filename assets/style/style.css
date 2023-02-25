@@ -1,12 +1,10 @@
-section{
-    width: 100%;
+section {
     display: flex;
     justify-content: center;
 }
 
-.borda{
+.borda {
     width: 6rem;
-    height: 1rem;
     padding: 1.28rem;
     margin-top: 2rem;
     border: 2px solid hsl(0, 0%, 57%);
@@ -14,32 +12,28 @@ section{
     background-color: hsl(0, 0%, 67%);
 }
 
-.botao{
+.botao {
     border: 2px solid hsl(0, 0%, 0%);
     border-radius: .4rem;
     cursor: pointer;
 }
 
-.ligar{
-    border: none;
-    float:left;
-}  
+.ligar {
+    float: left;
+} 
 
-.botao.ligar{
+.botao.ligar, .botao.desligar{
     width: 2.8rem;
     border-radius: 2px;
+    border: none;
 }
 
-.desligar{
-    border: none;
+.desligar {
     float: right;
 }
 
-.botao.desligar{
-    width:2.8rem;
-    border-radius: 2px;
-}
-
-#lampada{
+#lampada {
     margin: 0 auto;
+    width: 180px; 
+    height: 210px;
 }
