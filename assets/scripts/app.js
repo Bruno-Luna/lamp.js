@@ -23,18 +23,17 @@ const exibirHora = () => {
         idHora.style.color = black
 }
 
-const verificadorHora = () => {
+const verificarHora = () => {
     const ehDia = hora.getHours() >= 6 && hora.getHours() < 18
-    const ehNoite = hora.getHours() >= 18 || hora.getHours() < 6
 
     if(ehDia){
         return desligar()
-    }else if(ehNoite){
-        return ligar()
     }
+
+    return ligar()
 }
 
-exibirHora(verificadorHora())
+exibirHora(verificarHora())
 
 interruptorLigado.addEventListener('click', ligar)
 interruptorDesligado.addEventListener('click', desligar)
