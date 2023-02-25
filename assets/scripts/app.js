@@ -6,13 +6,13 @@ const interruptorDesligado = document.querySelector('.desligar')
 const black = 'black'
 
 const ligar = () => {
-        document.getElementById('lampada').style.backgroundImage = 'url("img/ligada.jpg")'
+        document.getElementById('lampada').style.backgroundImage = 'url("/assets/img/ligada.jpg")'
         interruptorLigado.setAttribute('style', 'background-color: white;')
         interruptorDesligado.setAttribute('style', 'border: 2px solid white;')
 }
     
 const desligar = () => {
-        document.getElementById('lampada').style.backgroundImage = 'url("img/desligada.jpg")'
+        document.getElementById('lampada').style.backgroundImage = 'url("/assets/img/desligada.jpg")'
         interruptorDesligado.setAttribute('style', 'background-color: white;')
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
 }
