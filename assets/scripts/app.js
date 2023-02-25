@@ -30,7 +30,7 @@ const verificarHora = () => {
         return desligar()
     }
 
-    return ligar()
+    ligar()
 }
 
 exibirHora(verificarHora())
