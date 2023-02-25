@@ -1,9 +1,9 @@
+const interruptorDesligado = document.querySelector('.desligar')
+const interruptorLigado = document.querySelector('.ligar')
+const lampada = document.querySelector('#lampada')
+
 let idHora = document.getElementById('hora')
 let data = new Date()
-
-const interruptorLigado = document.querySelector('.ligar')
-const interruptorDesligado = document.querySelector('.desligar')
-const lampada = document.querySelector('#lampada')
 
 const ligar = () => {
         lampada.style.backgroundImage = 'url("/assets/img/ligada.jpg")'
