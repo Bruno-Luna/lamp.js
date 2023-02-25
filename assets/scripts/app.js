@@ -35,3 +35,5 @@ const verificadorHora = () => {
 }
 
 exibirHora(verificadorHora())
+
+interruptorLigado.addEventListener('click', ligar)
