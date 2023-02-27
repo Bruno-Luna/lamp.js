@@ -6,19 +6,19 @@ let idHora = document.getElementById('hora')
 let data = new Date()
 
 const ligar = () => {
-        lampada.style.backgroundImage = 'url("/assets/img/ligada.jpg")'
+        lampada.style.backgroundImage = 'url("/img/ligada.jpg")'
         interruptorLigado.setAttribute('style', 'background-color: white;')
         interruptorDesligado.setAttribute('style', 'border: 2px solid white;')
 }
     
 const desligar = () => {
-        lampada.style.backgroundImage = 'url("/assets/img/desligada.jpg")'
+        lampada.style.backgroundImage = 'url("/img/desligada.jpg")'
         interruptorDesligado.setAttribute('style', 'background-color: white;')
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
 }
 
 const exibirHora = () => {
-        const horaAtual = `Horário de Brasília: ${data.getHours()}:${data.getMinutes()}`
+        const horaAtual = `Horário de acesso: ${data.getHours()}:${data.getMinutes()}`
         idHora.textContent = horaAtual
         idHora.style.color = 'black'
 }
