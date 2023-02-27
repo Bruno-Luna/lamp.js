@@ -6,13 +6,13 @@ let idHora = document.getElementById('hora')
 let data = new Date()
 
 const ligar = () => {
-        lampada.setAttribute('style', 'background-image: url("https://raw.githubusercontent.com/Bruno-Luna/lamp.js/master/assets/img/ligada.jpg")')
+        lampada.setAttribute('style', 'background-image: url("https://raw.githubusercontent.com/Bruno-Luna/lamp.js/master/img/ligada.jpg")')
         interruptorLigado.setAttribute('style', 'background-color: white;')
         interruptorDesligado.setAttribute('style', 'border: 2px solid white;')
 }
 
 const desligar = () => {
-        lampada.setAttribute('style', 'background-image: url("https://raw.githubusercontent.com/Bruno-Luna/lamp.js/master/assets/img/desligada.jpg")')
+        lampada.setAttribute('style', 'background-image: url("https://raw.githubusercontent.com/Bruno-Luna/lamp.js/master/img/desligada.jpg")')
         interruptorDesligado.setAttribute('style', 'background-color: white;')
         interruptorLigado.setAttribute('style', 'border: 2px solid white;')
 }
